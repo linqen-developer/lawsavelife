@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+  <title id="title">법무사김현수사무소 상담 프로세스 이미지</title>
+  <desc id="desc">법률 서류, 상담 노트, 절차 카드를 배치한 이미지</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#edf3f8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#071e38" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="760" height="900" fill="#f6f8fb"/>
+  <g opacity="0.22" stroke="#0f4c81">
+    <path d="M0 96H760M0 192H760M0 288H760M0 384H760M0 480H760M0 576H760M0 672H760M0 768H760M0 864H760"/>
+    <path d="M96 0V900M192 0V900M288 0V900M384 0V900M480 0V900M576 0V900M672 0V900"/>
+  </g>
+  <circle cx="635" cy="126" r="92" fill="#0f4c81" opacity="0.11"/>
+  <circle cx="116" cy="770" r="130" fill="#aa8747" opacity="0.13"/>
+  <g filter="url(#shadow)">
+    <rect x="110" y="92" width="450" height="560" rx="20" fill="url(#bg)" transform="rotate(-3 335 372)"/>
+    <rect x="110" y="92" width="450" height="560" rx="20" fill="none" stroke="#0f4c81" stroke-opacity="0.17" transform="rotate(-3 335 372)"/>
+  </g>
+  <g transform="rotate(-3 335 372)">
+    <rect x="166" y="158" width="210" height="18" rx="3" fill="#071e38"/>
+    <rect x="166" y="218" width="312" height="10" rx="2" fill="#0f4c81" opacity="0.24"/>
+    <rect x="166" y="254" width="260" height="10" rx="2" fill="#0f4c81" opacity="0.22"/>
+    <rect x="166" y="315" width="330" height="78" rx="8" fill="#0f4c81" opacity="0.08"/>
+    <rect x="166" y="432" width="150" height="12" rx="2" fill="#aa8747"/>
+    <rect x="166" y="468" width="280" height="10" rx="2" fill="#0f4c81" opacity="0.20"/>
+    <rect x="166" y="502" width="244" height="10" rx="2" fill="#0f4c81" opacity="0.20"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="312" y="540" width="318" height="206" rx="18" fill="#071e38"/>
+    <text x="352" y="602" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#d2b77d">5 STEP</text>
+    <text x="352" y="648" font-family="Arial, sans-serif" font-size="36" font-weight="800" fill="#ffffff">상담부터 접수까지</text>
+    <path d="M356 694H588" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+    <circle cx="370" cy="724" r="9" fill="#d2b77d"/>
+    <circle cx="430" cy="724" r="9" fill="#d2b77d"/>
+    <circle cx="490" cy="724" r="9" fill="#d2b77d"/>
+    <circle cx="550" cy="724" r="9" fill="#d2b77d"/>
+  </g>
+</svg>

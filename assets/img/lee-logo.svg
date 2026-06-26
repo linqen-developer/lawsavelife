@@ -1,0 +1,9 @@
+﻿<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">법무사김현수사무소 로고</title>
+  <desc id="desc">클래식 블루 원형 안에 L 문자를 배치한 법무사 사무소 로고</desc>
+  <rect width="160" height="160" rx="24" fill="#F6F8FB"/>
+  <circle cx="80" cy="80" r="56" fill="#0F4C81"/>
+  <circle cx="80" cy="80" r="48" stroke="#D2B77D" stroke-width="2"/>
+  <path d="M55 44H75V102H112V120H55V44Z" fill="white"/>
+  <path d="M88 50H112V66H88V50Z" fill="#D2B77D"/>
+</svg>
