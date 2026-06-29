@@ -207,6 +207,7 @@ textarea:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  flex: 0 0 auto;
   border: 1px solid transparent;
   border-radius: 6px;
   padding: 0 22px;
@@ -792,8 +793,9 @@ textarea:focus-visible {
   color: var(--navy);
   background: rgba(13, 53, 88, 0.04);
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1;
   text-align: left;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -872,6 +874,11 @@ textarea:focus-visible {
   border-color: var(--white);
 }
 
+#repayment .section-grid,
+#reviews .section-grid {
+  align-items: start;
+}
+
 #method .info-card,
 #benefits .info-card {
   min-height: 218px;
@@ -948,6 +955,7 @@ textarea:focus-visible {
 }
 
 .section-band a {
+  flex: 0 0 auto;
   min-height: 42px;
   display: inline-flex;
   align-items: center;
@@ -957,6 +965,8 @@ textarea:focus-visible {
   color: var(--navy);
   background: var(--white);
   font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .notice-panel,
