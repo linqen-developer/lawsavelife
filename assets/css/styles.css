@@ -13,7 +13,10 @@
   --line-strong: rgba(13, 53, 88, 0.28);
   --success: #286344;
   --danger: #8c2f2f;
-  --shadow-soft: 0 16px 38px rgba(13, 31, 48, 0.07);
+  --radius-panel: 0;
+  --radius-control: 2px;
+  --radius-badge: 2px;
+  --shadow-soft: 0 10px 26px rgba(13, 31, 48, 0.06);
   --shadow-strong: 0 24px 70px rgba(7, 28, 48, 0.2);
   --scene-height: clamp(700px, 80svh, 860px);
   --section-standard-min: clamp(640px, 70svh, 760px);
@@ -80,7 +83,7 @@ textarea:focus-visible {
   background: var(--navy);
   color: var(--white);
   padding: 10px 14px;
-  border-radius: 4px;
+  border-radius: var(--radius-control);
   font-weight: 800;
 }
 
@@ -184,7 +187,7 @@ textarea:focus-visible {
   width: 44px;
   height: 44px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   background: var(--white);
   color: var(--navy-deep);
   cursor: pointer;
@@ -209,7 +212,7 @@ textarea:focus-visible {
   gap: 10px;
   flex: 0 0 auto;
   border: 1px solid transparent;
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   padding: 0 22px;
   font-weight: 900;
   line-height: 1;
@@ -343,7 +346,7 @@ textarea:focus-visible {
   align-items: center;
   padding: 0 13px;
   border: 1px solid rgba(255, 255, 255, 0.32);
-  border-radius: 999px;
+  border-radius: var(--radius-badge);
   color: var(--white);
   background: rgba(255, 255, 255, 0.1);
   font-size: 0.84rem;
@@ -507,7 +510,7 @@ textarea:focus-visible {
 .representative-photo-card,
 .representative-info-card {
   border: 1px solid rgba(13, 53, 88, 0.12);
-  border-radius: 8px;
+  border-radius: var(--radius-panel);
   overflow: hidden;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 24px 70px rgba(7, 24, 39, 0.1);
@@ -704,7 +707,7 @@ textarea:focus-visible {
 .faq-item,
 .form-panel {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-panel);
   background: var(--white);
   box-shadow: var(--shadow-soft);
 }
@@ -788,7 +791,7 @@ textarea:focus-visible {
   justify-content: space-between;
   gap: 10px;
   border: 1px solid var(--line-strong);
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   padding: 0 14px;
   color: var(--navy);
   background: rgba(13, 53, 88, 0.04);
@@ -888,7 +891,7 @@ textarea:focus-visible {
 .section-band,
 .process-summary {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-panel);
   background: rgba(255, 255, 255, 0.72);
   box-shadow: var(--shadow-soft);
 }
@@ -913,7 +916,7 @@ textarea:focus-visible {
   list-style: none;
   background: var(--line);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-panel);
   overflow: hidden;
 }
 
@@ -960,7 +963,7 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   border: 1px solid var(--line-strong);
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   padding: 0 16px;
   color: var(--navy);
   background: var(--white);
@@ -973,7 +976,7 @@ textarea:focus-visible {
 .profile-panel,
 .case-note {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-panel);
   background: rgba(255, 255, 255, 0.82);
   box-shadow: var(--shadow-soft);
 }
@@ -1013,7 +1016,7 @@ textarea:focus-visible {
 .comparison-grid article,
 .quote-grid article {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-panel);
   background: var(--white);
   box-shadow: var(--shadow-soft);
 }
@@ -1179,7 +1182,7 @@ textarea:focus-visible {
   align-items: center;
   gap: 10px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-panel);
   padding: 14px 16px;
   color: var(--navy-deep);
   background: var(--white);
@@ -1219,7 +1222,7 @@ textarea:focus-visible {
   height: 40px;
   display: grid;
   place-items: center;
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   color: var(--navy-deep);
   background: var(--paper);
   font-weight: 900;
@@ -1263,7 +1266,7 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
+  border-radius: var(--radius-badge);
   padding: 0 12px;
   background: rgba(255, 255, 255, 0.1);
   font-size: 0.82rem;
@@ -1393,7 +1396,7 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   padding: 0 14px;
   color: rgba(255, 255, 255, 0.88);
   background: rgba(255, 255, 255, 0.06);
@@ -1432,7 +1435,7 @@ textarea:focus-visible {
   display: grid;
   place-items: center;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   color: var(--navy);
   background: rgba(13, 53, 88, 0.04);
   font-size: 0.84rem;
@@ -1473,7 +1476,7 @@ textarea:focus-visible {
   width: 100%;
   min-height: 50px;
   border: 1px solid rgba(23, 34, 50, 0.18);
-  border-radius: 6px;
+  border-radius: var(--radius-control);
   background: var(--white);
   color: var(--ink);
   padding: 0 14px;
