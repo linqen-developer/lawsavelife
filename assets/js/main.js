@@ -83,7 +83,7 @@ if (form && formStatus) {
     const cause = data.get("cause") || "";
     const message = data.get("message") || "";
     const body = [
-      "법무사김현수사무소 홈페이지 상담 신청",
+      "개인회생 상담센터 상담 신청",
       "",
       `성함: ${name}`,
       `연락처: ${phone}`,
@@ -99,7 +99,7 @@ if (form && formStatus) {
       message,
       ].join("\n");
 
-      window.location.href = `mailto:${fallbackEmail}?subject=${encodeURIComponent("법무사김현수사무소 홈페이지 상담 신청")}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:${fallbackEmail}?subject=${encodeURIComponent("개인회생 상담센터 상담 신청")}&body=${encodeURIComponent(body)}`;
       formStatus.textContent = "메일 작성 창을 열었습니다. 자동 접수 폼을 연결하면 이 영역에서 바로 접수 완료 상태로 전환됩니다.";
       formStatus.className = "form-status is-info";
       return;
