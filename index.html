@@ -10,7 +10,8 @@
   <script>
     (function () {
       var canonicalHost = "www.lawsavelife.com";
-      if (window.location.protocol !== "https:" || window.location.hostname !== canonicalHost) {
+      var isLocalPreview = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+      if (!isLocalPreview && (window.location.protocol !== "https:" || window.location.hostname !== canonicalHost)) {
         window.location.replace(
           "https://" + canonicalHost + window.location.pathname + window.location.search + window.location.hash
         );
@@ -39,7 +40,7 @@
       "description": "개인회생, 개인파산, 법인회생, 법인파산 상담",
       "telephone": "+82-2-430-0980",
       "faxNumber": "+82-504-264-9019",
-      "email": "fwp-law@outlook.kr",
+      "email": "fwpna@naver.com",
       "priceRange": "상담 후 안내",
       "areaServed": "KR",
       "address": {
@@ -130,7 +131,7 @@
               <p>개인회생과 개인파산 상담에서 현재 채무, 소득, 재산 상황을 직접 확인하고 진행 가능성과 준비 방향을 안내합니다.</p>
               <ul>
                 <li><a href="tel:024300980">02-430-0980</a></li>
-                <li><a href="mailto:fwp-law@outlook.kr">fwp-law@outlook.kr</a></li>
+                <li><a href="mailto:fwpna@naver.com">fwpna@naver.com</a></li>
                 <li>서울 송파구 법원로8길 13, 12층 1213호</li>
               </ul>
             </div>
@@ -779,7 +780,7 @@
             </div>
             <div>
               <span>이메일</span>
-              <a href="mailto:fwp-law@outlook.kr">fwp-law@outlook.kr</a>
+              <a href="mailto:fwpna@naver.com">fwpna@naver.com</a>
             </div>
             <div>
               <span>주소</span>
@@ -802,8 +803,15 @@
             <span>전화 회신</span>
             <span>서류 안내</span>
           </div>
-          <form action="" method="POST" data-consult-form data-mail-fallback="fwpna@naver.com,fwp-law@outlook.kr">
+          <form action="https://formsubmit.co/ajax/fwpna@naver.com" method="POST" data-consult-form>
             <input type="hidden" name="_subject" value="법무사김현수사무소 홈페이지 상담 신청" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="신청경로" value="개인회생·개인파산 홈페이지" />
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="consultWebsite">웹사이트</label>
+              <input id="consultWebsite" name="_honey" type="text" tabindex="-1" autocomplete="off" />
+            </div>
             <div class="form-grid">
               <div class="field">
                 <label for="name">성함</label>
@@ -876,7 +884,7 @@
           대표법무사 : 김현수 · 광고책임담당자 : 김현수<br />
           주소 : 서울특별시 송파구 법원로8길 13, 12층 1213호 (문정동, 문정헤리움써밋타워)<br />
           TEL : 02-430-0980 · FAX : 0504-264-9019<br />
-          이메일 : fwp-law@outlook.kr
+          이메일 : fwpna@naver.com
         </p>
         <p class="fine-print">상담 내용과 절차 결과는 개인 상황, 제출 자료, 법원 판단에 따라 달라질 수 있습니다.</p>
         <p>© <span data-year>2026</span> 법무사김현수사무소. All rights reserved.</p>
